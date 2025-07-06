@@ -46,11 +46,11 @@ const fontFamily = {
 }
 
 const baselMedium = isWeb
-  ? 'Basel, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif'
+  ? 'Pretendard, Basel, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif'
   : fontFamily.sansSerif.medium
 
 const baselBook = isWeb
-  ? 'Basel, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif'
+  ? 'Pretendard, Basel, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif'
   : fontFamily.sansSerif.book
 
 type SansSerifFontFamilyKey = keyof typeof fontFamily.sansSerif

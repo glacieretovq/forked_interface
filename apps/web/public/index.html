@@ -43,6 +43,8 @@
     <link rel="preload" href="%PUBLIC_URL%/fonts/Basel-Grotesk-Book.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="%PUBLIC_URL%/fonts/Basel-Grotesk-Medium.woff2" as="font" type="font/woff2" crossorigin />
 
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
+
     <!-- Load zone-events.js with highest priority before any other JS resources -->
     <script src="%PUBLIC_URL%/zone-events.js"></script>
 
@@ -80,7 +82,8 @@
 
       @supports (font-variation-settings: normal) {
         * {
-          font-family: 'Basel', sans-serif;
+          /* font-family: 'Basel', sans-serif; */
+          font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
         }
       }
 
