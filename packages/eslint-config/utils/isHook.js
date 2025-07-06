@@ -1,4 +1,6 @@
-export function isHook(node) {
+// packages/eslint-config/utils/isHook.js
+
+function isHook(node) {
   // Check function declarations
   if (node.type === 'FunctionDeclaration' && node.id?.name) {
     return node.id.name.startsWith('use')
@@ -26,3 +28,5 @@ export function isHook(node) {
 
   return false
 }
+
+module.exports = { isHook }
