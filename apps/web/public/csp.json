@@ -12,13 +12,15 @@
     "'unsafe-inline'",
     "https://fonts.googleapis.com",
     "https://fonts.gstatic.com",
-    "https://fonts.gstatic.com/s/inter/v18/*"
+    "https://fonts.gstatic.com/s/inter/v18/*",
+    "https://cdn.jsdelivr.net"
   ],
   "fontSrc": [
     "'self'",
     "https://fonts.googleapis.com",
     "https://fonts.gstatic.com",
-    "https://fonts.gstatic.com/s/inter/v18/*"
+    "https://fonts.gstatic.com/s/inter/v18/*",
+    "https://cdn.jsdelivr.net"
   ],
   "imgSrc": [
     "*",
