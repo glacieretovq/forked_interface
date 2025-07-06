@@ -1,5 +1,3 @@
-// packages/eslint-config/utils/isHook.js
-
 function isHook(node) {
   // Check function declarations
   if (node.type === 'FunctionDeclaration' && node.id?.name) {
