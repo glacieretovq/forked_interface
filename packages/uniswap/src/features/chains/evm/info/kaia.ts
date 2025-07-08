@@ -1,5 +1,5 @@
 import { CurrencyAmount } from '@uniswap/sdk-core'
-import { ETH_LOGO } from 'ui/src/assets'
+import { KAIA_LOGO } from 'ui/src/assets'
 import { USDC_KAIATESTNET } from 'uniswap/src/constants/tokens'
 import { Chain as BackendChainId } from 'uniswap/src/data/graphql/uniswap-data-api/__generated__/types-and-hooks'
 import { DEFAULT_NATIVE_ADDRESS_LEGACY } from 'uniswap/src/features/chains/evm/rpc'
@@ -11,9 +11,10 @@ import {
   UniverseChainInfo,
 } from 'uniswap/src/features/chains/types'
 import { ElementName } from 'uniswap/src/features/telemetry/constants'
+import { kairos } from 'viem/chains'
 
 export const KAIA_CHAIN_INFO = {
-  name: 'Kaia Testnet',
+  ...kairos,
   id: UniverseChainId.KaiaTestnet,
   assetRepoNetworkName: 'kaia-testnet',
   backendChain: {
@@ -32,13 +33,11 @@ export const KAIA_CHAIN_INFO = {
   },
   interfaceName: 'kaia-testnet',
   label: 'Kaia Testnet',
-  logo: ETH_LOGO, // 임시로 ETH 로고 사용
+  logo: KAIA_LOGO,
   nativeCurrency: {
-    name: 'Kaia ETH',
-    symbol: 'ETH',
-    decimals: 18,
+    ...kairos.nativeCurrency,
     address: DEFAULT_NATIVE_ADDRESS_LEGACY,
-    logo: ETH_LOGO,
+    logo: KAIA_LOGO,
   },
   networkLayer: NetworkLayer.L2,
   pendingTransactionsRetryOptions: undefined,
