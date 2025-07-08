@@ -43,8 +43,8 @@ export const KAIA_CHAIN_INFO = {
   networkLayer: NetworkLayer.L2,
   pendingTransactionsRetryOptions: undefined,
   rpcUrls: {
-    [RPCType.Default]: { http: ['https://rpc.kaia.network'] },
-    [RPCType.Interface]: { http: ['https://rpc.kaia.network'] },
+    [RPCType.Default]: { http: ['https://public-en-kairos.node.kaia.io'] },
+    [RPCType.Interface]: { http: ['https://public-en-kairos.node.kaia.io'] },
   },
   spotPriceStablecoinAmount: CurrencyAmount.fromRawAmount(USDC_KAIATESTNET, 10_000e6),
   stablecoins: [USDC_KAIATESTNET],
@@ -55,6 +55,6 @@ export const KAIA_CHAIN_INFO = {
     name: 'Wrapped Ether',
     symbol: 'WETH',
     decimals: 18,
-    address: '0xa1CC7e921eD511c057f34D4EA7760f8aE6A4a42D', // 실제 WETH 주소로 교체 필요
+    address: '0xa1CC7e921eD511c057f34D4EA7760f8aE6A4a42D',
   },
 } as const satisfies UniverseChainInfo 
