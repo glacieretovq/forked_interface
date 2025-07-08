@@ -20,6 +20,7 @@ export const UNISWAP_LOGO_LARGE = require('./logos/png/uniswap-logo-large.png')
 export const UNISWAP_MONO_LOGO_LARGE = require('./logos/png/uniswap-mono-logo-large.png')
 export const UNISWAP_APP_ICON = require('./logos/png/uniswap-app-icon.png')
 export const BINANCE_WALLET_ICON = require('./logos/png/binance-icon.png')
+export const KAIA_LOGO = require('./logos/png/kaia-logo.png')
 
 export const ONBOARDING_QR_ETCHING_VIDEO_LIGHT = require('./videos/light-etching.mp4')
 export const ONBOARDING_QR_ETCHING_VIDEO_DARK = require('./videos/dark-etching.mp4')
