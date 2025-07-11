@@ -53,8 +53,6 @@ import { isMobileWeb } from 'utilities/src/platform'
 import noop from 'utilities/src/react/noop'
 import { isIFramed } from 'utils/isIFramed'
 
-import { WalletConnectTestButton } from 'uniswap/src/features/transactions/swap/form/SwapFormScreen/WalletConnectTestButton'
-
 export default function SwapPage() {
   const navigate = useNavigate()
   const location = useLocation()
@@ -328,7 +326,6 @@ function UniversalSwapFlow({
               passkeyAuthStatus={passkeyAuthStatus}
             />
           </SwapDependenciesStoreContextProvider>
-          <WalletConnectTestButton />
           <SwapBottomCard />
         </Flex>
       )}
