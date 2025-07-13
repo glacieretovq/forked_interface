@@ -35,6 +35,7 @@ export enum ElementName {
   ChainCelo = 'chain-celo',
   ChainEthereum = 'chain-ethereum',
   ChainMonadTestnet = 'chain-monad-testnet',
+  ChainKaiaTestnet = 'chain-kaia-testnet',
   ChainOptimism = 'chain-optimism',
   ChainPolygon = 'chain-polygon',
   ChainSepolia = 'chain-sepolia',

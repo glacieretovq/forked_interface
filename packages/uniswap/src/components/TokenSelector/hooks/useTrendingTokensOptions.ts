@@ -10,6 +10,7 @@ export function useTrendingTokensOptions(
   address: Address | undefined,
   chainFilter: Maybe<UniverseChainId>,
 ): GqlResult<TokenOption[] | undefined> {
+  // Your tokens
   const {
     data: portfolioBalancesById,
     error: portfolioBalancesByIdError,
@@ -17,6 +18,7 @@ export function useTrendingTokensOptions(
     loading: loadingPortfolioBalancesById,
   } = usePortfolioBalancesForAddressById(address)
 
+  // Tokens by 24H volume
   const {
     data: tokens,
     error: tokensError,

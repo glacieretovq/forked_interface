@@ -17,6 +17,7 @@ export enum UniverseChainId {
   Blast = UniswapSDKChainId.BLAST,
   Bnb = UniswapSDKChainId.BNB,
   Celo = UniswapSDKChainId.CELO,
+  KaiaTestnet = 1001, // @uniswap/sdk-core에 없는 체인 ID이므로 하드코딩
   MonadTestnet = UniswapSDKChainId.MONAD_TESTNET,
   Optimism = UniswapSDKChainId.OPTIMISM,
   Polygon = UniswapSDKChainId.POLYGON,
@@ -49,6 +50,7 @@ export const SUPPORTED_CHAIN_IDS: UniverseChainId[] = [
 export const SUPPORTED_TESTNET_CHAIN_IDS: UniverseChainId[] = [
   UniverseChainId.Sepolia,
   UniverseChainId.UnichainSepolia,
+  UniverseChainId.KaiaTestnet,
   UniverseChainId.MonadTestnet,
 ]
 

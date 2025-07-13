@@ -35,6 +35,14 @@ export const USDC_UNICHAIN_SEPOLIA = new Token(
   'USD Coin',
 )
 
+export const USDC_KAIATESTNET = new Token(
+  UniverseChainId.KaiaTestnet,
+  '0x445b07b00fbd81dfbd3dca6d136739f8b94c7ae5', // USDC 주소
+  6,
+  'USDC',
+  'USD Coin',
+)
+
 export const USDC_SONEIUM = new Token(
   UniverseChainId.Soneium,
   '0xbA9986D2381edf1DA03B0B9c1f8b00dc4AacC369',

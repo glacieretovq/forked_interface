@@ -1,3 +1,4 @@
+import { V2_FACTORY_ADDRESSES, V2_ROUTER_ADDRESSES } from '@uniswap/sdk-core'
 import { getChainInfo } from 'uniswap/src/features/chains/chainInfo'
 import { UniverseChainId } from 'uniswap/src/features/chains/types'
 
@@ -11,6 +12,26 @@ const BNB_ARBITRUM_ADDRESS = '0x20865e63b111b2649ef829ec220536c82c58ad7b'
 const CELO_MAINNET_ADDRESS = '0x471ece3750da237f93b8e339c536989b8978a438'
 const AVAX_BNB = '0x1ce0c2827e2ef14d5c4f29a091d735a204794041'
 const MATIC_UNICHAIN_ADDRESS = '0xf6ac97b05b3bc92f829c7584b25839906507176b'
+
+// Kaia Testnet V2 Factory and Router addresses
+export const FACTORY_ADDRESS: Record<number, string> = {
+  1001: '0xbC49812828187233CcA09c348D36D6A9B3e1520E',
+}
+
+export const ROUTER_ADDRESS: Record<number, string> = {
+  1001: '0x2ea9b26FE3A3AA1942d4d96F4932BFf0ECEd289b',
+}
+
+// Extended V2 Factory and Router addresses that include custom chains
+export const EXTENDED_V2_FACTORY_ADDRESSES = {
+  ...V2_FACTORY_ADDRESSES,
+  ...FACTORY_ADDRESS,
+}
+
+export const EXTENDED_V2_ROUTER_ADDRESSES = {
+  ...V2_ROUTER_ADDRESSES,
+  ...ROUTER_ADDRESS,
+}
 
 export const NATIVE_TOKEN_PLACEHOLDER = 'NATIVE'
 
@@ -36,4 +57,4 @@ export function getWrappedNativeAddress(chainId: UniverseChainId): string {
 }
 
 // TODO: Load this from config or backend once we have it (WALL-6592)
-export const UNISWAP_DELEGATION_ADDRESS: Address = '0x227380efd3392EC33cf148Ade5e0a89D33121814'
+export const UNISWAP_DELEGATION_ADDRESS: string = '0x227380efd3392EC33cf148Ade5e0a89D33121814'
